@@ -5,12 +5,12 @@ package game;
  */
 public class LevelPotion extends Potion {
     @Override
-    public String getItemName(String name) {
-        return super.getItemName("Potion of Level Up");
+    public String getItemName() {
+        return "Potion of Level Up";
     }
 
     @Override
-    public void use() {
-        super.use();
+    public void use(Hero hero) {
+        return hero.setLevel(hero.level+1);
     }
 }

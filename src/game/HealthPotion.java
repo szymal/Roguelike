@@ -5,8 +5,12 @@ package game;
  */
 public class HealthPotion extends Potion {
     @Override
-    public void use() {
-        super.use();
+    public String getItemName() {
+        return "+10 HP!";
+    }
 
+    @Override
+    public void use(Hero hero) {
+        return hero.setHealth(hero.health+10);
     }
 }

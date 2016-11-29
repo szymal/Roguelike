@@ -7,13 +7,13 @@ public class Hero {
     protected int level;
     protected int health;
     protected int armor;
-    protected String inventory = ;
+    Item[] inventory = new Item[10];
 
     public Hero(){
         int level = 1;
         int health = 100;
         int armor = 100;
-        String inventory =  ;
+        inventory = Item[0];
     }
 
     public int getLevel() {
@@ -40,16 +40,19 @@ public class Hero {
         this.armor = armor;
     }
 
-    public String getInventory() {
+    public Item[] getInventory() {
         return inventory;
     }
 
-    public void setInventory(String inventory) {
+    public void setInventory(Item[] inventory) {
         this.inventory = inventory;
     }
 
-    public void useItem(Usable){
-        Usable.use(Hero());
+    public void useItem(Usable usable){
+        usable.use(this Hero);
+    }
+    public void eqpuipItem(Equippable equippable){
+        equippable.equip(this Hero);
     }
 
 }

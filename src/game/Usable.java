@@ -1,8 +1,11 @@
 package game;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by kamilszymczak on 29.11.2016.
  */
 public interface Usable {
-    public void use(Hero());
+    void use(Hero hero);
 }

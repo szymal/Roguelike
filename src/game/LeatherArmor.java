@@ -5,12 +5,12 @@ package game;
  */
 public class LeatherArmor extends Armor {
     @Override
-    public String getItemName(String name) {
-        return super.getItemName(name);
+    public String getItemName() {
+        return "Lether Armor";
     }
 
     @Override
-    public void equip() {
-        super.equip();
+    public void equip(Hero hero) {
+        return hero.setArmor(hero.armor+10);
     }
 }
