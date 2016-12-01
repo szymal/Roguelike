@@ -11,6 +11,6 @@ public class HealthPotion extends Potion {
 
     @Override
     public void use(Hero hero) {
-        return hero.setHealth(hero.health+10);
+        hero.setHealth(hero.health+10);
     }
 }

@@ -11,6 +11,6 @@ public class LevelPotion extends Potion {
 
     @Override
     public void use(Hero hero) {
-        return hero.setLevel(hero.level+1);
+        hero.setLevel(hero.level+1);
     }
 }

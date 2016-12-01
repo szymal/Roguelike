@@ -11,6 +11,6 @@ public class LeatherArmor extends Armor {
 
     @Override
     public void equip(Hero hero) {
-        return hero.setArmor(hero.armor+10);
+        hero.setArmor(hero.armor+10);
     }
 }

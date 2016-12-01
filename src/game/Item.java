@@ -7,7 +7,7 @@ public abstract class Item {
     public abstract String getItemName();
 
     @Override
-    public String toString(String name) {
+    public String toString() {
         return getItemName();
     }
 

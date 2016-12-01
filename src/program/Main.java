@@ -1,5 +1,6 @@
 package program;
 
+import game.HealthPotion;
 import game.Hero;
 
 /**
@@ -8,8 +9,9 @@ import game.Hero;
 public class Main {
     public static void main(String args[]){
        Hero hero = new Hero();
-        hero.setInventory([0]);
-
+        HealthPotion healthPotion = new HealthPotion();
+        hero.useItem(healthPotion);
+        System.out.println(hero.getHealth());
     }
 
 }

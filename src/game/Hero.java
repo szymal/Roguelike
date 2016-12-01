@@ -13,7 +13,7 @@ public class Hero {
         int level = 1;
         int health = 100;
         int armor = 100;
-        inventory = Item[0];
+        inventory = new Item[0];
     }
 
     public int getLevel() {
@@ -49,10 +49,10 @@ public class Hero {
     }
 
     public void useItem(Usable usable){
-        usable.use(this Hero);
+        usable.use(this);
     }
     public void eqpuipItem(Equippable equippable){
-        equippable.equip(this Hero);
+        equippable.equip(this);
     }
 
 }
